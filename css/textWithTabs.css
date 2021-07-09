@@ -1,0 +1,122 @@
+#mainTextTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #f4f4f4;
+    height: 1003px;
+}
+
+.mailText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailText h1 {
+    width: 600px;
+    margin: 0;
+    padding-top: 61px;
+    font-family: TTNorms;
+    font-size: 34px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: center;
+    color: #363636;
+}
+
+.mailText p {
+    width: 623px;
+    margin: 0;
+    padding-top: 9px;
+    margin: 9px 219px 59px 220px;
+    font-family: TTNorms;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: center;
+    color: #383838;
+}
+
+#btnTextTabs {
+    display: flex;
+    justify-content: center;
+}
+
+#btnTextTabs button {
+    width: auto;
+    margin: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: TTNorms;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    border: none;
+    background-color: #f4f4f4;
+}
+
+.btnHide{
+    color: #ababab;
+}
+
+.btnShow{
+    color: #4b94c6;
+}
+
+#otherTextTabs {
+    display: flex;
+    width: 1062px;
+    background-color: white;
+    margin-top: 38px;
+}
+
+#otherTextTabs h2 {
+    width: 381px;
+    height: 47px;
+    margin: 0;
+    margin-left: 65px;
+    margin-top: 62px;
+    font-family: TTNorms;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #363636;
+}
+
+#otherTextTabs p {
+    width: 372px;
+    height: 314px;
+    margin: 0;
+    margin-left: 65px;
+    font-family: TTNorms;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #4e4e4e;
+}
+
+#otherTextTabs img {
+    width: 415px;
+    height: 415px;
+    margin-top: 63px;
+    margin-left: 128px;
+    margin-right: 73px;
+    margin-bottom: 129px;
+}

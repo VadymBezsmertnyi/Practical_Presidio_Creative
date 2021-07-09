@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+#headerID {
+    position: sticky;
+    top: 0;
+}
+
+.mainHeader {
+    width: 100vw;
+    height: 37px;
+}
+
+.announcement_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(150, 189, 213);
+}
+
+.announcement_bar a {
+    margin-left: 1%;
+    font-family: TTNorms;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: solid 1px white;
+}
+
+.announcement_bar p {
+    font-family: TTNorms;
+}
+
+.announcement_bar a,
+.announcement_bar p {
+    color: white;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+}
+
+.logoNavigation {
+    background-color: white;
+    display: flex;
+    height: 63px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 50vw;
+}
+
+.logo img {
+    width: 100px;
+}
+
+#nav-btn{ 
+    border-bottom: 17px double rgb(150, 189, 213);
+    border-top: 6px solid rgb(150, 189, 213);
+    content:"";
+    height: 5px; 
+    width:30px;
+    display: none;
+}
+
+.mainNavigation{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+}
+
+.mainNavigation img{
+    width: 25px;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+}
+
+#navigation button {
+    background-color: white;
+    color: rgb(48, 48, 48);
+    font-family: TTNorms;
+    font-size: 14px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+}
+
+#navigation button:hover {
+    background-color: white;
+    color: rgb(48, 48, 48);
+    font-family: TTNorms;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px;
+    border: 4px solid rgb(150, 189, 213);
+}
+
+#navigation img {
+    margin: 5px;
+}
