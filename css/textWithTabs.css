@@ -112,11 +112,15 @@
     color: #4e4e4e;
 }
 
-#otherTextTabs img {
+.hideImgMobile {
     width: 415px;
     height: 415px;
     margin-top: 63px;
     margin-left: 128px;
     margin-right: 73px;
     margin-bottom: 129px;
+}
+
+.ImgMobile{
+    display: none;
 }

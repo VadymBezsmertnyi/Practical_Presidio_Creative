@@ -2,8 +2,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const btnTextTabs = document.querySelectorAll('#btnTextTabs button'),
               otherTextH2 = document.querySelectorAll('#otherText h2'),
               otherTextP = document.querySelectorAll('#otherText p'),
-              img = document.querySelectorAll('#otherTextTabs img'),
-              imgMobile = document.querySelectorAll('#otherText img');
+              img = document.querySelectorAll('.hideImgMobile'),
+              imgMobile = document.querySelectorAll('.ImgMobile');
 
     console.log(otherTextH2);
     console.log(otherTextP);

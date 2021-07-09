@@ -26,7 +26,8 @@
         color: #383838;
     }
 
-    #otherText img {
+    .ImgMobile {
+        display: block;
         width: 150px;
         height: 150px;
         margin-top: 15px;
