@@ -5,13 +5,23 @@
     }
 
     .mailText h1 {
-        width: 280px;
-        font-size: 16px;
-        padding-top: 30px;
+        width: 90vw;
+        height: 114px;
+        margin: 0;
+        padding-top: 41px;
+        font-family: TTNorms;
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: center;
+        color: #383838;
     }
 
     .mailText p {
-        width: 280px;
+        width: 84vw;
         margin: 0;
         padding-top: 9px;
         margin: 0;
@@ -28,58 +38,60 @@
 
     .ImgMobile {
         display: block;
-        width: 150px;
-        height: 150px;
-        margin-top: 15px;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 5px;
+        width: 252px;
+        height: auto;
+        margin-top: 21px;
+        margin-left: 22px;
+        margin-right: 21px;
+        margin-bottom: 24px;
     }
 
-    #btnTextTabs button {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 12px;
-
+    #btnTextTabs {
+        display: none;
     }
 
     #otherTextTabs {
-        width: 90vw;
-        margin-top: 19px;
+        width: 295px;
+        margin-top: 38px;
         flex-direction: column;
         align-items: center;
     }
 
     #otherTextTabs h2 {
-        width: 250px;
-        margin: 0;
-        margin-left: 0;
-        margin-top: 10px;
-        font-size: 14px;
+        width: 253px;
+        height: auto;
+        margin-left: 21px;
+        margin-right: 21px;
+        margin-top: 22px;
+        margin-bottom: 4px;
+        font-family: TTNorms;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
         text-align: center;
+        color: #363636;
     }
 
     #otherTextTabs p {
-        width: 250px;
+        width: 253px;
+        height: auto;
         margin: 0;
-        margin-left: 0px;
+        margin-left: 21px;
+        margin-right: 21px;
         font-size: 10px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.63;
         letter-spacing: normal;
-        text-align: center;
+        text-align: start;
         color: #4e4e4e;
     }
 
-    #otherText {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hideImgMobile{
+    .hideImgMobile {
         display: none;
     }
 }

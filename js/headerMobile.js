@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
         mainNavigation = document.querySelector('#mainNavigation'),
         navigation = document.querySelector('#navigation'),
         body = document.querySelector('body'),
-        headerID = document.querySelector('#mainTextTabs');
+        headerID = document.querySelector('#mainTextTabs'),
+        faq = document.querySelector('#faq');
 
     navBtn.addEventListener('click', () => {
         navBtn.style.display = "none";
@@ -34,6 +35,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     headerID.addEventListener('click', (e) => {
         if (e.target !== headerID) {
+            hideMunuNavigation();
+        }
+    });
+
+    faq.addEventListener('click', (e) => {
+        if (e.target !== faq) {
             hideMunuNavigation();
         }
     });

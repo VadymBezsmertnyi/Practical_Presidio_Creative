@@ -1,0 +1,61 @@
+.otherTextFaq h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-around;
+}
+
+#imgFaq img {
+    display: none;
+}
+
+.imgMobileFaq{
+    width: 79vw;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 0px 0px 20px 6px rgb(210 210 210 / 75%);
+}
+
+.imgMobileFaq p {
+    font-family: TTNorms;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #383838;
+}
+
+.otherTextFaq {
+    width: auto;
+    margin: 0;
+    margin-top: 49px;
+}
+
+#textFaq p {
+    width: 100vw;
+    height: 86px;
+    margin: 0;
+    margin-top: 11px;
+    font-family: TTNorms;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: center;
+    color: #383838;
+}
+
+.otherTextFaq h2, .otherTextFaq p {
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+
+#otherTextImgFaq{
+    width: 100vw;
+}

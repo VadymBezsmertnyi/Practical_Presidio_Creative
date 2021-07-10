@@ -77,7 +77,7 @@ body {
     width: 25px;
 }
 
-#navigation {
+.navigation {
     display: flex;
     align-items: center;
 }
