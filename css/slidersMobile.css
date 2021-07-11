@@ -1,3 +1,66 @@
-@media (min-width: 320px) and (max-width: 1000px) {
+#btnDiv {
+    height: 0;
+}
 
+#left,
+#right {
+    height: 0;
+}
+
+#scriptMobile{
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    #scriptFull{
+        display: none;
+    }
+
+    #btnDiv {
+        margin-top: 10px;
+        display: flex;
+        height: auto;
+    }
+
+    #sliderBtn {
+        width: 8px;
+        height: 8px;
+        margin: 10px;
+        border-radius: 90px;
+    }
+
+    .on {
+        background-color: #9a9a9a;
+    }
+
+    .off {
+        background-color: #dfdfdf;
+    }
+
+    #left,
+    #right {
+        width: 20px;
+        height: 100vh;
+        background-color: white;
+        margin-top: 38px;
+    }
+
+    #left{
+        margin-right: 20px;
+    }
+
+    #right{
+        margin-left: 20px;
+    }
+
+    #sliderOtherTextTabs{
+        display: flex;
+    }
+
+    .idStart{
+        margin-left: 40px;
+    }
+    .idEnd{
+        margin-right: 40px;
+    }
 }

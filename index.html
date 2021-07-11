@@ -54,53 +54,65 @@
             <button class="btnHide">Whole Exome Sequencing</button>
             <button class="btnHide">lcWGS and Microarrays</button>
         </div>
-        <div id="otherTextTabs">
-            <div id="otherText" class="sliders" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
-                <div class="sliderMobile">
-                    <h2>Targeted Panels</h2>
-                    <img class="ImgMobile" src="img/Oval.png" alt="">
-                    <p>Panels are often used in clinical settings because they’re low cost and provide high quality
-                        coverage
-                        of specific, pre-defined genomic regions of interest. While useful in certain settings, such
-                        assays
-                        are limited by their narrow focus. <br><br>
-                        With ≥ 99.5% call rate across ~600 genes relevant
-                        to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses with a
-                        single sample.
-                    </p>
-                </div>
+        <div id="sliderOtherTextTabs">
+            <div id="left"></div>
+            <div id="otherTextTabs">
+                <div id="otherText" class="sliders">
+                    <div class="sliderMobile">
+                        <h2>Targeted Panels</h2>
+                        <img class="ImgMobile" src="img/Oval.png" alt="">
+                        <p>Panels are often used in clinical settings because they’re low cost and provide high quality
+                            coverage
+                            of specific, pre-defined genomic regions of interest. While useful in certain settings, such
+                            assays
+                            are limited by their narrow focus. <br><br>
+                            With ≥ 99.5% call rate across ~600 genes relevant
+                            to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
+                            with a
+                            single sample.
+                        </p>
+                    </div>
 
-                <div class="sliderMobile" style="display: none;">
-                    <h2>Whole Exome Sequencing</h2>
-                    <img class="ImgMobile" src="img/Oval2.png" alt="">
-                    <p>Whole Exome Sequencing:Panels are often used in clinical settings because
-                        they’re low cost and provide high quality coverage
-                        of specific, pre-defined genomic regions of interest. While useful in certain settings, such
-                        assays
-                        are limited by their narrow focus.
-                        With ≥ 99.5% call rate across ~600 genes relevant
-                        to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses with a
-                        single sample.
-                    </p>
-                </div>
+                    <div class="sliderMobile" style="display: none;">
+                        <h2>Whole Exome Sequencing</h2>
+                        <img class="ImgMobile" src="img/Oval2.png" alt="">
+                        <p>Whole Exome Sequencing:Panels are often used in clinical settings because
+                            they’re low cost and provide high quality coverage
+                            of specific, pre-defined genomic regions of interest. While useful in certain settings, such
+                            assays
+                            are limited by their narrow focus.
+                            With ≥ 99.5% call rate across ~600 genes relevant
+                            to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
+                            with a
+                            single sample.
+                        </p>
+                    </div>
 
-                <div class="sliderMobile" style="display: none;">
-                    <h2>lcWGS and Microarrays</h2>
-                    <img class="ImgMobile" src="img/Oval3.png" alt="">
-                    <p>lcWGS and Microarrays: Panels are often used in clinical settings because
-                        they’re low cost and provide high quality coverage
-                        of specific, pre-defined genomic regions of interest. While useful in certain settings, such
-                        assays
-                        are limited by their narrow focus.
-                        With ≥ 99.5% call rate across ~600 genes relevant
-                        to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses with a
-                        single sample.
-                    </p>
+                    <div class="sliderMobile" style="display: none;">
+                        <h2>lcWGS and Microarrays</h2>
+                        <img class="ImgMobile" src="img/Oval3.png" alt="">
+                        <p>lcWGS and Microarrays: Panels are often used in clinical settings because
+                            they’re low cost and provide high quality coverage
+                            of specific, pre-defined genomic regions of interest. While useful in certain settings, such
+                            assays
+                            are limited by their narrow focus.
+                            With ≥ 99.5% call rate across ~600 genes relevant
+                            to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
+                            with a
+                            single sample.
+                        </p>
+                    </div>
                 </div>
+                <img src="img/Oval.png" class="hideImgMobile" alt="">
+                <img src="img/Oval2.png" class="hideImgMobile" alt="" style="display: none;">
+                <img src="img/Oval3.png" class="hideImgMobile" alt="" style="display: none;">
             </div>
-            <img src="img/Oval.png" class="hideImgMobile" alt="">
-            <img src="img/Oval2.png" class="hideImgMobile" alt="" style="display: none;">
-            <img src="img/Oval3.png" class="hideImgMobile" alt="" style="display: none;">
+            <div id="right"></div>
+        </div>
+        <div id="btnDiv">
+            <div id="sliderBtn" class="on"></div>
+            <div id="sliderBtn" class="off"></div>
+            <div id="sliderBtn" class="off"></div>
         </div>
     </div>
 
@@ -154,8 +166,9 @@
     </div>
 
     <script src="js\headerMobile.js"></script>
-    <script src="js\textWithTabs.js"></script>
+    <script id="scriptFull" src="js\textWithTabs.js"></script>
     <script src="js\faq.js"></script>
+    <script id="scriptMobile" src="js\slider.js"></script>
 </body>
 
 </html>

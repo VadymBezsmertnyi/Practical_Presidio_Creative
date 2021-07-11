@@ -5,9 +5,6 @@ window.addEventListener('DOMContentLoaded', () => {
         faqImg = document.querySelectorAll('#imgFaq img'),
         imgMobileFaq = document.querySelectorAll('.imgMobileFaq');
 
-    console.log(faqImg);
-
-
     function hideAll() {
         faqTextButton.forEach(h2 => {
             h2.classList.add('hideColor');
