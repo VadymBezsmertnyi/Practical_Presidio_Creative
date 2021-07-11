@@ -1,9 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const btnTextTabs = document.querySelectorAll('#btnTextTabs button'),
-        otherTextH2 = document.querySelectorAll('#otherText h2'),
-        otherTextP = document.querySelectorAll('#otherText p'),
         img = document.querySelectorAll('.hideImgMobile'),
-        imgMobile = document.querySelectorAll('.ImgMobile'),
         sliderMobile = document.querySelectorAll('.sliderMobile');
 
     function clearBtn() {
@@ -17,10 +14,14 @@ window.addEventListener('DOMContentLoaded', () => {
         sliderMobile.forEach(img => {
             img.style.display = 'none';
         });
+        img.forEach(img => {
+            img.style.display = 'none';
+        });
     }
 
     function showID(i) {
         sliderMobile[i].style.display = '';
+        img[i].style.display = '';
     }
 
     btnTextTabs.forEach((btn, i) => {

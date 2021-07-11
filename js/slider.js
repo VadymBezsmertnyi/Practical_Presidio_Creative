@@ -2,7 +2,8 @@ const sliderMobile = document.querySelectorAll('.sliderMobile'),
     sliderBtn = document.querySelectorAll('#sliderBtn'),
     left = document.querySelector('#left'),
     right = document.querySelector('#right'),
-    otherTextTabs = document.querySelector('#otherTextTabs');
+    otherTextTabs = document.querySelector('#otherTextTabs'),
+    btnTextTabs = document.querySelectorAll('#btnTextTabs button');
 
 if (sliderMobile[0]) {
     left.style.display = "none";
@@ -21,6 +22,51 @@ function btnHide() {
 }
 let idSlide = 0;
 
+btnTextTabs.forEach((btn, i) => {
+    btn.addEventListener('click', () => {
+        idSlide = i;
+        console.log(idSlide);
+        btnHide();
+        sliderBtn[i].classList.remove('off');
+        sliderBtn[i].classList.add('on');
+
+        if (i == 1) {
+            left.style.display = "";
+            right.style.display = "";
+            otherTextTabs.classList.remove('idStart');
+            otherTextTabs.classList.remove('idEnd');
+            clearBtn();
+            showBtn(i);
+        }
+        else if (i == 2) {
+            right.style.display = "none";
+            left.style.display = "";
+            otherTextTabs.classList.add('idEnd');
+            otherTextTabs.classList.remove('idStart');
+            clearBtn();
+            showBtn(i);
+        } else if (i == 0) {
+            left.style.display = "none";
+            right.style.display = "";
+            otherTextTabs.classList.add('idStart');
+            otherTextTabs.classList.remove('idEnd');
+            clearBtn();
+            showBtn(i);
+        }
+    });
+});
+
+
+
+function clearBtn() {
+    btnTextTabs.forEach(btn => {
+        btn.classList.remove('btnShow');
+    });
+}
+function showBtn(i) {
+    btnTextTabs[i].classList.add('btnShow');
+}
+
 sliderBtn.forEach((btn, i) => {
     btn.addEventListener('click', () => {
         btnHide();
@@ -30,23 +76,31 @@ sliderBtn.forEach((btn, i) => {
         console.log(i);
 
         idSlide = i;
+        clearBtn();
+        showBtn(i);
 
         if (i == 1) {
             left.style.display = "";
             right.style.display = "";
             otherTextTabs.classList.remove('idStart');
             otherTextTabs.classList.remove('idEnd');
+            clearBtn();
+            showBtn(i);
         }
         else if (i == 2) {
             right.style.display = "none";
             left.style.display = "";
             otherTextTabs.classList.add('idEnd');
             otherTextTabs.classList.remove('idStart');
+            clearBtn();
+            showBtn(i);
         } else if (i == 0) {
             left.style.display = "none";
             right.style.display = "";
             otherTextTabs.classList.add('idStart');
             otherTextTabs.classList.remove('idEnd');
+            clearBtn();
+            showBtn(i);
         }
     });
 });
@@ -55,8 +109,10 @@ sliderBtn.forEach((btn, i) => {
 right.addEventListener('click', () => {
     btnHide();
     idSlide++;
-    if(idSlide>2){
-        idSlide=0;
+    if (idSlide > 2) {
+        idSlide = 0;
+        clearBtn();
+        showBtn(idSlide);
     }
     sliderBtn[idSlide].classList.remove('off');
     sliderBtn[idSlide].classList.add('on');
@@ -79,13 +135,15 @@ right.addEventListener('click', () => {
         otherTextTabs.classList.add('idStart');
         otherTextTabs.classList.remove('idEnd');
     }
+    clearBtn();
+    showBtn(idSlide);
 });
 
 left.addEventListener('click', () => {
     btnHide();
     idSlide--;
-    if(idSlide<0){
-        idSlide=2;
+    if (idSlide < 0) {
+        idSlide = 2;
     }
     console.log(idSlide);
     sliderBtn[idSlide].classList.remove('off');
@@ -109,6 +167,8 @@ left.addEventListener('click', () => {
         otherTextTabs.classList.add('idStart');
         otherTextTabs.classList.remove('idEnd');
     }
+    clearBtn();
+    showBtn(idSlide);
 });
 
 
@@ -122,6 +182,7 @@ sliderMobile.forEach((slider, i) => {
         event.stopPropagation();
         initialPoint = event.changedTouches[0];
     }, false);
+
     slider.addEventListener('touchend', function (event) {
         event.preventDefault();
         event.stopPropagation();
@@ -146,6 +207,8 @@ sliderMobile.forEach((slider, i) => {
                                 otherTextTabs.classList.remove('idEnd');
                                 console.log(i);
                                 idSlide = 1;
+                                clearBtn();
+                                showBtn(idSlide);
                             }
                             else if (i == 1) {
                                 idSlide = i;
@@ -155,6 +218,8 @@ sliderMobile.forEach((slider, i) => {
                                 otherTextTabs.classList.remove('idStart');
                                 console.log(i);
                                 idSlide = 2;
+                                clearBtn();
+                                showBtn(idSlide);
                             }
                         }
                     }
@@ -167,6 +232,8 @@ sliderMobile.forEach((slider, i) => {
                         sliderBtn[0].classList.remove('off');
                         sliderBtn[0].classList.add('on');
                         idSlide = 0;
+                        clearBtn();
+                        showBtn(idSlide);
                         if (i == 2) {
                             idSlide = i;
                             left.style.display = "none";
@@ -174,6 +241,8 @@ sliderMobile.forEach((slider, i) => {
                             otherTextTabs.classList.add('idStart');
                             otherTextTabs.classList.remove('idEnd');
                             idSlide = 0;
+                            clearBtn();
+                            showBtn(idSlide);
                         }
                     }
                 }
@@ -192,6 +261,8 @@ sliderMobile.forEach((slider, i) => {
                                 otherTextTabs.classList.remove('idStart');
                                 otherTextTabs.classList.remove('idEnd');
                                 idSlide = 1;
+                                clearBtn();
+                                showBtn(idSlide);
                             }
                             else if (i == 1) {
                                 left.style.display = "none";
@@ -199,6 +270,8 @@ sliderMobile.forEach((slider, i) => {
                                 otherTextTabs.classList.add('idStart');
                                 otherTextTabs.classList.remove('idEnd');
                                 idSlide = 0;
+                                clearBtn();
+                                showBtn(idSlide);
                             }
                         }
                     }
@@ -210,12 +283,16 @@ sliderMobile.forEach((slider, i) => {
                         sliderBtn[2].classList.remove('off');
                         sliderBtn[2].classList.add('on');
                         idSlide = 0;
+                        clearBtn();
+                        showBtn(idSlide);
                         if (i == 0) {
                             right.style.display = "none";
                             left.style.display = "";
                             otherTextTabs.classList.add('idEnd');
                             otherTextTabs.classList.remove('idStart');
                             idSlide = 0;
+                            clearBtn();
+                            showBtn(idSlide);
                         }
                     }
                 }
