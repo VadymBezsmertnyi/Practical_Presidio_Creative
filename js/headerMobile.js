@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
         faq = document.querySelector('#faq');
 
     navBtn.addEventListener('click', () => {
-        navBtn.style.display = "none";
+        navBtn.classList.add('hide');
         logo.classList.add('logoJS');
         logoNavigation.classList.add('logoNavigationJS');
         mainNavigation.classList.remove('mainNavigation');
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     function hideMunuNavigation(){
-        navBtn.style.display = "";
+        navBtn.classList.remove('hide');
         logo.classList.remove('logoJS');
         logoNavigation.classList.remove('logoNavigationJS');
         mainNavigation.classList.remove('mainNavigationJS');

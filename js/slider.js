@@ -59,7 +59,7 @@ sliderMobile.forEach((slider, i) => {
                         sliderBtn[2].classList.add('off');
                         sliderBtn[0].classList.remove('off');
                         sliderBtn[0].classList.add('on');
-                        if(i=2){
+                        if(i==2){
                             left.style.display = "none";
                             right.style.display = "";
                             otherTextTabs.classList.add ('idStart');
@@ -108,5 +108,4 @@ sliderMobile.forEach((slider, i) => {
             }
         }
     }, false);
-
 });

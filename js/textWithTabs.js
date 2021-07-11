@@ -13,28 +13,13 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function hideTextTabs() {
-        otherTextH2.forEach(h2 => {
-            h2.style.display = 'none';
-        });
-        otherTextP.forEach(p => {
-            p.style.display = 'none';
-        });
-        img.forEach(im => {
-            im.style.display = 'none';
-        });
-        imgMobile.forEach(imM => {
-            imM.style.display = 'none';
-        });
+
         sliderMobile.forEach(img => {
             img.style.display = 'none';
         });
     }
 
     function showID(i) {
-        otherTextH2[i].style.display = '';
-        otherTextP[i].style.display = '';
-        img[i].style.display = '';
-        imgMobile[i].style.display = '';
         sliderMobile[i].style.display = '';
     }
 
