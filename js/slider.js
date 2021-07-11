@@ -3,6 +3,7 @@ const sliderMobile = document.querySelectorAll('.sliderMobile'),
     left = document.querySelector('#left'),
     right = document.querySelector('#right'),
     otherTextTabs = document.querySelector('#otherTextTabs'),
+    img = document.querySelectorAll('.hideImgMobile'),
     btnTextTabs = document.querySelectorAll('#btnTextTabs button');
 
 if (sliderMobile[0]) {
@@ -17,6 +18,9 @@ function btnHide() {
         btn.classList.add('off');
     });
     sliderMobile.forEach(slide => {
+        slide.style.display = "none";
+    });
+    img.forEach(slide => {
         slide.style.display = "none";
     });
 }
@@ -62,9 +66,13 @@ function clearBtn() {
     btnTextTabs.forEach(btn => {
         btn.classList.remove('btnShow');
     });
+    img.forEach(slide => {
+        slide.style.display = "none";
+    });
 }
 function showBtn(i) {
     btnTextTabs[i].classList.add('btnShow');
+    img[i].style.display = "";
 }
 
 sliderBtn.forEach((btn, i) => {
