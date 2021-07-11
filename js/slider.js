@@ -144,27 +144,36 @@ sliderMobile.forEach((slider, i) => {
                                 right.style.display = "";
                                 otherTextTabs.classList.remove('idStart');
                                 otherTextTabs.classList.remove('idEnd');
+                                console.log(i);
+                                idSlide = 1;
                             }
                             else if (i == 1) {
+                                idSlide = i;
                                 right.style.display = "none";
                                 left.style.display = "";
                                 otherTextTabs.classList.add('idEnd');
                                 otherTextTabs.classList.remove('idStart');
+                                console.log(i);
+                                idSlide = 2;
                             }
                         }
                     }
                     else {
+                        idSlide = i;
                         sliderMobile[2].style.display = "none";
                         sliderMobile[0].style.display = "";
                         sliderBtn[2].classList.remove('on');
                         sliderBtn[2].classList.add('off');
                         sliderBtn[0].classList.remove('off');
                         sliderBtn[0].classList.add('on');
+                        idSlide = 0;
                         if (i == 2) {
+                            idSlide = i;
                             left.style.display = "none";
                             right.style.display = "";
                             otherTextTabs.classList.add('idStart');
                             otherTextTabs.classList.remove('idEnd');
+                            idSlide = 0;
                         }
                     }
                 }
@@ -182,12 +191,14 @@ sliderMobile.forEach((slider, i) => {
                                 right.style.display = "";
                                 otherTextTabs.classList.remove('idStart');
                                 otherTextTabs.classList.remove('idEnd');
+                                idSlide = 1;
                             }
                             else if (i == 1) {
                                 left.style.display = "none";
                                 right.style.display = "";
                                 otherTextTabs.classList.add('idStart');
                                 otherTextTabs.classList.remove('idEnd');
+                                idSlide = 0;
                             }
                         }
                     }
@@ -198,11 +209,13 @@ sliderMobile.forEach((slider, i) => {
                         sliderBtn[0].classList.add('off');
                         sliderBtn[2].classList.remove('off');
                         sliderBtn[2].classList.add('on');
+                        idSlide = 0;
                         if (i == 0) {
                             right.style.display = "none";
                             left.style.display = "";
                             otherTextTabs.classList.add('idEnd');
                             otherTextTabs.classList.remove('idStart');
+                            idSlide = 0;
                         }
                     }
                 }
